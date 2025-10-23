@@ -6,7 +6,7 @@ const config = {
   url: 'https://Moddinu.github.io',
   baseUrl: '/data-engineering-toolkit/',
   organizationName: 'Moddinu',
-  projectName: 'data-engineering-toolkitt',
+  projectName: 'data-engineering-toolkit',
   deploymentBranch: 'gh-pages',
   trailingSlash: false,
   presets: [
