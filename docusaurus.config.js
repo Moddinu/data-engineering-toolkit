@@ -9,7 +9,6 @@ const config = {
   projectName: 'data-engineering-toolkitt',
   deploymentBranch: 'gh-pages',
   trailingSlash: false,
-
   presets: [
     [
       'classic',
@@ -18,6 +17,7 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl: 'https://github.com/Moddinu/data-engineering-toolkit/edit/main/',
         },
+        blog: { showReadingTime: true },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
