@@ -6,6 +6,14 @@ module.exports = {
     'intro',
     {
       type: 'category',
+      label: 'Databases',
+      items: [
+        'databases/clickhouse',
+        'databases/general',
+      ],
+    },
+    {
+      type: 'category',
       label: 'SQL',
       items: [
         'sql/basic-queries',
