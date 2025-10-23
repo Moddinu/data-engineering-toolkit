@@ -1,8 +1,0 @@
-:root {
-  --ifm-color-primary: #2e8555;
-  --ifm-font-family-base: system-ui, sans-serif;
-}
-
-html[data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-}
