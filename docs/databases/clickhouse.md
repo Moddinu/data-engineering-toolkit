@@ -20,6 +20,8 @@ There are four type of **MergeTree** engines thath give extra functionality.
 | **SharedMergeTree** | Used in Clickhouse Cloud |
 | **ReplicaedMergeTree** | For on-prem replication |
 
+It's a column oriented database in fact it would split a table and store the coloumns in individual files and that waht makes the query performant.
+
 ## SQL Synatax
 Clickhouse uses SQl syntax and supports common sql commands
 ```sql
