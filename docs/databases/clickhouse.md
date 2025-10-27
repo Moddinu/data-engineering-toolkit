@@ -12,7 +12,7 @@ Clickhouse handles data by using different engines :
 
 ## How is data stored
 Clickhouse uses table engines to store data, **MergeTree** is the primary table engine used for single-node clickhouse, it is used as it allows column-oriented, highly-scalable performance.
-There are four type of **MergeTree** engines thath give extra functionality. 
+There are four type of **MergeTree** engines that give extra functionality. 
 | Merge Tree Engine | Used For |
 | ----------- | ----------- |
 | **AggregatingMergeTree** | For roll-up use cases |
@@ -20,7 +20,8 @@ There are four type of **MergeTree** engines thath give extra functionality.
 | **SharedMergeTree** | Used in Clickhouse Cloud |
 | **ReplicaedMergeTree** | For on-prem replication |
 
-It's a column oriented database in fact it would split a table and store the coloumns in individual files and that waht makes the query performant.
+It's a column oriented database in fact it would split a table and store the coloumns in individual files and that what makes the query performant.
+It is important to be cautious when setting the primary key as clickhouse will use to split your insert batches in parts and if you create to many parts you may encounter a performance issue.
 
 ## SQL Synatax
 Clickhouse uses SQl syntax and supports common sql commands
