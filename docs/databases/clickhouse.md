@@ -21,7 +21,8 @@ There are four type of **MergeTree** engines that give extra functionality.
 | **ReplicaedMergeTree** | For on-prem replication |
 
 It's a column oriented database in fact it would split a table and store the coloumns in individual files and that what makes the query performant.
-It is important to be cautious when setting the primary key as clickhouse will use to split your insert batches in parts and if you create to many parts you may encounter a performance issue.
+It is important to be cautious when setting the **primary key** as clickhouse will use to split your insert batches in parts and if you create to many parts you may encounter a performance issue. The **primary key**  will determine the sort order on disk, determines the columns used to build the primary index and not uniques per row (We can use **ORDER BY** as well).
+The **primary index** is used so clickhouse knows in which granule to search.This eliminates a table full scan.
 
 ## SQL Synatax
 Clickhouse uses SQl syntax and supports common sql commands
