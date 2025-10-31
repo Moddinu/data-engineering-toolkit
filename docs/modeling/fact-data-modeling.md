@@ -30,10 +30,13 @@ Fact dataset should:
 3. Not be a log table
 4. Data should be flat
 
-When should you model in dimensions in fact tables?
+## When should you model in dimensions in fact tables?
+Eg an issue described by Zach Wilson is when in Netflix they wanted to collect all the data of the network used by their apps. At first to get the app name they had a join on the table causing a lot of issues so what they did is a wide company change to send the app from where the requested was originating allowing them to insert the app dimension attribute in the network fact table. 
 
 
 Notes:
 - Use UTC Timezones
 - Raw logs are not facts
+- High volume make fact data much more costly so a retention period is usally set
+- Deduping is up to you
 
