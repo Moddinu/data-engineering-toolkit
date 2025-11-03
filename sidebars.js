@@ -25,7 +25,7 @@ module.exports = {
       type: 'category',
       label: 'Data Modeling',
       items: [
-        'modeling/fact-data-modeling'
+        'modeling/fact-data-modeling',
         'modeling/star-schema',
         'modeling/scd-type2',
       ],
