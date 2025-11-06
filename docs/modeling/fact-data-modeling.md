@@ -40,3 +40,10 @@ Notes:
 - High volume make fact data much more costly so a retention period is usally set
 - Deduping is up to you
 
+## Confusion about dimension and facts
+Dimensions and facts sometimes cross paths and are hard to differentiate especially when we aggregate the results, it's important to create the correct buckets to capture all the data so that we capture all the data needed.
+
+Facts can be turned into dimensions eg having a fact user activity table into a dimension of active and not active this would be a small moving dimension. 
+
+
+
